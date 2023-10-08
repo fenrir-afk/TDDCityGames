@@ -1,4 +1,4 @@
-package com.example.tddcitygames.Ui
+package com.example.tddcitygames.Fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

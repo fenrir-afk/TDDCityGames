@@ -1,4 +1,4 @@
-package com.example.tddcitygames.Ui
+package com.example.tddcitygames.Fragments
 
 import junit.framework.TestCase.assertEquals
 import org.junit.Before
