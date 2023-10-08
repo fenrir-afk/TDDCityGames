@@ -5,10 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.tddcitygames.R
+import com.example.tddcitygames.databinding.FragmentFInalBinding
 
 class FInalFragment : Fragment() {
-
+    private lateinit var binding: FragmentFInalBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -19,6 +21,10 @@ class FInalFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_f_inal, container, false)
+        binding = FragmentFInalBinding.inflate(inflater,container,false)
+        binding.button.setOnClickListener{
+            findNavController().navigate(R.id.homeFragment, null)
+        }
+        return binding.root
     }
 }
